@@ -1,0 +1,23 @@
+$img_height : 300px;
+img{
+    width: 100%;
+    height: $img_height;
+}
+
+#skills{
+    .col-lg-4{
+        height: $img_height;
+    }
+    .text-center{
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        position: absolute;
+        height: $img_height;
+        h1{
+            position: relative;
+            top: 40%;
+            background: red;
+        }
+    }
+}
