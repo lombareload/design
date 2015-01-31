@@ -1,6 +1,7 @@
 $img_height : 300px;
 $transition : all 1s ease 0s;
-img{
+
+img.skill-img{
     width: 100%;
     height: $img_height;
 }
@@ -30,11 +31,19 @@ img{
 }
 
 .container-fluid > .row, .jumbotron{
+    padding-top: 100px;
     height:100vh;
 }
 
 img#portrait{
+    height: $img_height;
     border-radius: 50%;
+    border: 6px solid red;
+}
+
+.portrait-section{
+    background: black;
+    color: white;
 }
 
 .footer img{
@@ -52,8 +61,7 @@ img#portrait{
     transition: $transition;
     &.visual{
         background: transparent;
+        border-bottom: none;
     }
-    border-bottom: none;
-    /* background: transparent; */
     padding-top: 12px;
 }
