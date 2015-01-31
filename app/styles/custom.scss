@@ -1,23 +1,59 @@
 $img_height : 300px;
+$transition : all 1s ease 0s;
 img{
     width: 100%;
     height: $img_height;
 }
 
 #skills{
-    .col-lg-4{
-        height: $img_height;
+    .col-sm-4{
+        transition: $transition;
+        &:hover{
+            opacity: 0.5;
+            .text-center > h1{
+                opacity: 1;
+            }
+        }
     }
     .text-center{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 30px;
         width: 100%;
         position: absolute;
         height: $img_height;
         h1{
             position: relative;
             top: 40%;
-            background: red;
+            color: white;
+            opacity: 0;
         }
     }
+}
+
+.container-fluid > .row, .jumbotron{
+    height:100vh;
+}
+
+img#portrait{
+    border-radius: 50%;
+}
+
+.footer img{
+    width: 100px;
+    height: 70px;
+}
+
+.col-center{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    transition: $transition;
+    &.visual{
+        background: transparent;
+    }
+    border-bottom: none;
+    /* background: transparent; */
+    padding-top: 12px;
 }
